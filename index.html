@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/logo.png">
+    <title>Yummy</title>
+</head>
+<body>
+    <!-- ====loadingscreen=== -->
+    <div class="loadingScreen  justify-content-center align-items-center">
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <!-- ====sideNav=== -->
+    <div class="sideNav">
+        <div class="links animate__animated py-3 ">
+         <ul>
+             <li class="py-2 animate__animated L1" id="search1">Search</li>
+             <li class="py-2 animate__animated L1" id="catInput" >Categories</li>
+             <li class="py-2 animate__animated L1" id="areaButton">Area</li>
+             <li class="py-2 animate__animated L1" id="ingrediant2" >Ingredients</li>
+             <li class="py-2 animate__animated L1" id="contactUs">Contact Us</li>
+         </ul>
+ 
+        </div>
+        <div class="navFooter px-3">
+         <div class="icons">
+         <i class="fa-brands fa-facebook"></i>
+         <i class="fa-brands fa-twitter"></i>
+         <i class="fa-solid fa-globe"></i>
+         </div>
+         <p >Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+        <div class="sideNav-open-close">
+         <div class="sideImg">
+             <img src="./images/logo.png" alt="yummy" >
+         </div>
+         <div class="icon-open-close">
+             <i class="fa-solid fa-align-justify fa-2x openNav"></i>
+             <i class="fa-solid fa-xmark closeNav"></i>
+         </div>
+         <div class="footIcon py-2">
+             <i class="fa-solid fa-globe py-2"></i>
+             <i class="fa-solid fa-share-nodes"></i>
+         </div>
+        </div>
+     </div>
+     <!-- ====searchPage==== -->
+     <div class="search d-none animate__animated animate__fadeIn">
+        <div class="container py-5" >
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Search By Name" class="form-control search-input ">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Search By First Letter" class="form-control letter-input" maxlength="1">
+                </div>
+            </div>
+         </div>
+     </div>
+     <!-- ====homePage==== -->
+     <div class="Home position-relative min-vh-100 animate__animated animate__fadeIn">
+        <div class="container">
+            <div class="row py-5 g-4 my-row" >
+            </div>
+        </div>
+        </div>
+        <!-- ===contactus=== -->
+        <div class="container d-flex justify-content-center align-items-center my-contact-us d-none ">
+            <form action="" class="py-5 w-100">
+                <div class="   row ms-5">
+                    <div class="col-lg-6 py-2">
+                        <input type="text" value="" class="form-control contact-input" id="nameInput" placeholder="Enter Your Name">
+                        <p class="alert alert-danger mt-2 d-none name-validation">
+                            Special characters and numbers not allowed
+                        </p>
+                    </div>
+                    <div class=" col-lg-6 py-2">
+                        <input type="text" value="" class="form-control contact-input" id="emailInput" placeholder="Enter Your Email">
+                        <p class="alert alert-danger mt-2 d-none email-validation">
+                            Email not valid *exemple@yyy.zzz
+                        </p>
+                    </div>
+                </div>
+                <div class="row py-4 ms-5">
+                    <div class="col-lg-6 py-2">
+                        <input type="text" value="" class="form-control contact-input" id="phoneInput" placeholder="Enter Your Phone">
+                        <p class="alert alert-danger mt-2 d-none phone-validation">
+                            Enter valid Phone Number
+                        </p>
+                    </div>
+                    <div class="col-lg-6 py-2">
+                        <input type="number" value="" maxlength="3" class="form-control contact-input" id="ageInput" placeholder="Enter Your Age">
+                        <p class="alert alert-danger mt-2 d-none age-validation">
+                            Enter valid age
+                        </p>
+                    </div>
+                </div>
+                <div class="row ms-5">
+                    <div class="col-lg-6 py-2">
+                        <input type="password" value="" class="form-control contact-input" id="passInput" placeholder="Enter Your Password">
+                        <p class="alert alert-danger mt-2 d-none pass-validation">
+                            Enter valid password Minimum eight characters, at least one letter and one number:
+                        </p>
+                    </div>
+                    <div class="col-lg-6 py-2">
+                        <input type="password" value="" class="form-control contact-input " id="Repassword" placeholder="Repassword">
+                        <p class="alert alert-danger mt-2 d-none rePass-validation">
+                            Enter valid Repassword
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center my-3 ms-5">
+                    <button class="btn btn-outline-danger  contact-btn" disabled id="contact-btn" type="button">Submit</button>
+                </div>
+            </form>
+         </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/mine.js"></script>
+</body>
+</html>
